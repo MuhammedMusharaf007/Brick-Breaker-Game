@@ -121,7 +121,7 @@ class Block():
             brick_row = []
             for column in range(game_columns):
                 x_brick = column * self.width
-                y_brick = column * self.height
+                y_brick = row * self.height
                 rect = pygame.Rect(x_brick, y_brick, self.width, self.height)
                 #Row based power to the bricks
                 if row < 2:
